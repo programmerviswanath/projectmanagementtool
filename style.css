@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+   
+}
+h1{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue,0 0 5px darkblue;
+    padding: 25px;
+    animation: glow 2s linear infinite;
+}
+@keyframes glow{
+    0%{background-color: #4caf50;}
+    50%{background-color: #eeff00;}
+    100%{background-color: #4caf50;}
+}
+body
+{
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: lightgray;
+}
+.container
+{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.list
+{
+    background:darkmagenta;
+    color: white;
+    width: 650px;
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0 0 128px 0 rgba(39, 206, 47, 0.839),0 32px 64px -48px rgba(0,0,0,0.5);
+    animation: glowing 2s linear infinite;
+}
+@keyframes glowing{
+    0%{color:white;}
+    50%{color:whitesmoke;}
+    100%{color:wheat;}
+}
+.wrapper
+{
+    background: chartreuse;
+    width: 450px;
+    border: 3px solid black;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.form 
+{
+    padding: 25px 30px;
+}
+.form header{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c42129;
+}
+.form form{
+    margin: 20px 0;
+}
+
+.form .name-details
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.form .field label{
+    margin-bottom: 2px;
+}
+.form .field
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;   
+}
+.form .field input{
+    outline: none;
+}
+.form .input input:focus,
+.form .input input:valid{
+  border-color:rgba(97, 38, 92, 0);
+}
+.form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border: 1px solid #1e90ff;
+    border-radius: 5px;
+
+}
+.form .image input{
+    font-size: 17px;
+}
+.form .button input{
+    margin-top: 13px;
+    height: 45px;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    background:rgb(32, 138, 243);
+    color: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#task-list
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+th, td{
+    padding: 10px;
+}
+button{
+    background-color: rgb(14, 122, 48);
+    color: rgba(178, 183, 21, 0.568);
+    padding: 5px;
+}
+#btn-style{
+  letter-spacing: 2px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: 0.2s;
+  font-weight: bold;
+}
+#btn-style:hover{
+    color:#fff;
+    background-color: #00b7ff;
+    box-shadow: 0 0 15px #00b7ff,0 0 45px #00b7ff, 0 0 90px #00b7ff;
+}
